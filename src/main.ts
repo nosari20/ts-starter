@@ -1,10 +1,10 @@
-class Plop {
+export class HelloTS {
     constructor(){};
 
-    plop(){
-        alert("plop6");
+    sayHello(){
+        return 'hello';
     }
 }
 
-let plop: Plop = new Plop();
-plop.plop();
+let hello: HelloTS = new HelloTS();
+console.log(hello.sayHello());

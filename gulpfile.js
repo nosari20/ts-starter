@@ -2,15 +2,19 @@ var gulp = require('./gulp')([
     'build-ts',
     'build-sass',
     'copy-html',
-    'live'
+    'live',
+    'build-test',
+    'run-test'
 ]);
  
-
+/* Building */
 gulp.task('build', ['build-ts', 'build-sass', 'copy-html']);
 gulp.task('build:ts', ['build-ts']);
 gulp.task('build:sass', ['build-sass']);
 gulp.task('build:html', ['copy-html']);
 
+
+/*  Watching */
 gulp.task('server', ['build'], function(){
     gulp.start('live');
 });
@@ -25,4 +29,12 @@ gulp.task('watch', function(){
     html_watcher.on('change', function(event) {
         console.log('File [HTML] ' + event.path + ' was ' + event.type + ', running tasks...');
     });
+});
+
+
+/* Testing */
+gulp.task('test:build', ['build-test']);
+
+gulp.task('test', ['build-test'], function(){
+    gulp.start('run-test');
 });
