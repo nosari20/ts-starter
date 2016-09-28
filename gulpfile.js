@@ -11,7 +11,9 @@ gulp.task('build:ts', ['build-ts']);
 gulp.task('build:sass', ['build-sass']);
 gulp.task('build:html', ['copy-html']);
 
-gulp.task('server', ['live']);
+gulp.task('server', ['build'], function(){
+    gulp.start('live');
+});
 
 gulp.task('watch', function(){
     ts_watcher = gulp.watch('src/**/*.ts', ['build-ts']);
