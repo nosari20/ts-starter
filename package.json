@@ -1,0 +1,30 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.0",
+  "description": "TypeScript Starter",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "build": "gulp build",
+    "build:ts": "gulp build:ts",
+    "build:scss": "gulp build:scss",
+    "build:html": "gulp build:html",
+    "server": "gulp server",
+    "watch": "gulp watch",
+    "start": "concurrently \"npm run server\" \"npm run watch\" "
+  },
+  "author": "nosari20",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "concurrently": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.30",
+    "gulp-sass": "^2.3.2",
+    "tsify": "^1.0.7",
+    "typescript": "^2.0.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

@@ -1,0 +1,5 @@
+# ts starter
+
+```
+npm start
+```
