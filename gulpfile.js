@@ -24,10 +24,13 @@ gulp.task('watch', function(){
     ts_watcher.on('change', function(event) {
         console.log('File [TypeScript]' + event.path + ' was ' + event.type + ', running tasks...');
     });
-
     html_watcher = gulp.watch('src/**/*.html',['copy-html']);
     html_watcher.on('change', function(event) {
         console.log('File [HTML] ' + event.path + ' was ' + event.type + ', running tasks...');
+    });
+    sass_watcher = gulp.watch('src/**/*.scss',['build-sass']);
+    sass_watcher.on('change', function(event) {
+        console.log('File [SCSS] ' + event.path + ' was ' + event.type + ', running tasks...');
     });
 });
 
