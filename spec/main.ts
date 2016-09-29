@@ -10,8 +10,8 @@ describe('HelloTS', () => {
   describe('Some event', () => {
     it('should result in something', () => {
       let hello = new HelloTS();
-      expect(hello.sayHello()).to.eq('hello'); //aside: chai is not type checked :()
-      expect(hello.sayHello()).to.eq('hell'); //aside: chai is not type checked :()
+      expect(hello.sayHello()).to.eq('Hello World !');
+      expect(hello.sayHello()).to.eq('Hello World ?');
     });
   });
 });

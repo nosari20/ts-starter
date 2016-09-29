@@ -14,5 +14,5 @@ var build_test = function () {
         .pipe(gulp.dest('./spec/compiled/'));
 }
 
-gulp.task('build-ts', build_test);
+gulp.task('build-test', build_test);
 module.exports = build_test;

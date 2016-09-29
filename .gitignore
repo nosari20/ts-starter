@@ -4,3 +4,4 @@ build
 typings
 typings.json
 spec/compiled
+npm-debug.log

@@ -2,7 +2,7 @@ export class HelloTS {
     constructor(){};
 
     sayHello(){
-        return 'hello';
+        return 'Hellow World !';
     }
 }
 
