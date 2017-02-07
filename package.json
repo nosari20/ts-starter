@@ -14,8 +14,7 @@
     "server": "gulp server",
     "watch": "gulp watch",
     "start": "concurrently \"npm run server\" \"npm run watch\" ",
-    "typings": "typings",
-    "postinstall": "typings install dt~chai dt~mocha dt~orchestrator --global  --save"
+    "postinstall": "typings install dt~chai dt~mocha --global --save & typings install  dt~orchestrator --save"
   },
   "author": "nosari20",
   "license": "ISC",
@@ -32,7 +31,7 @@
     "opn": "^4.0.2",
     "tsify": "^1.0.7",
     "typescript": "^2.0.3",
-    "typings": "^1.4.0",
+    "typings": "^2.1.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }
