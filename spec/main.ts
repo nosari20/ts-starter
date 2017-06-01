@@ -11,6 +11,9 @@ describe('HelloTS', () => {
     it('should result in something', () => {
       let hello = new HelloTS();
       expect(hello.sayHello()).to.eq('Hello World !');
+    });
+     it('should result in something', () => {
+      let hello = new HelloTS();
       expect(hello.sayHello()).to.eq('Hello World ?');
     });
   });
