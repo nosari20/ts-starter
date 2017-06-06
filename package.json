@@ -26,6 +26,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-twig": "^0.7.0",
     "gulp-typescript": "^3.0.1",
+    "gulp-uglify": "^3.0.0",
     "mocha": "^3.1.0",
     "opn": "^4.0.2",
     "tsify": "^1.0.7",
