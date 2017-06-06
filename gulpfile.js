@@ -5,15 +5,15 @@ var gulp = require('./gulp')([
     'copy-file',
     'live',
     'build-test',
-    'run-test'
+    'run-test',
+
+    'build-sass-min',
+    'build-ts-min',
 ]);
  
 /* Building */
-gulp.task('build', ['build-ts', 'build-sass', 'build-html', 'copy-file']);
-gulp.task('build:ts', ['build-ts']);
-gulp.task('build:sass', ['build-sass']);
-gulp.task('build:html', ['build-html']);
-gulp.task('build:copy', ['copy-file']);
+gulp.task('build', ['build-ts', 'build-sass', 'build-html', 'copy-file', 'copy-server']);
+gulp.task('build:prod', ['build-ts-min', 'build-sass-min', 'build-html', 'copy-file']);
 
 /*  Watching */
 gulp.task('server', ['build'], function(){
