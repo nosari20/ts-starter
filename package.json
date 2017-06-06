@@ -8,6 +8,7 @@
     "gulp": "gulp",
     "typings": "typings",
     "build": "gulp build",
+    "build:prod": "gulp build:prod",
     "server": "gulp server",
     "watch": "gulp watch",
     "start": "concurrently \"npm run server\" \"npm run watch\" ",
