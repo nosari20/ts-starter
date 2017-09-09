@@ -12,7 +12,7 @@ var gulp = require('./gulp')([
 ]);
  
 /* Building */
-gulp.task('build', ['build-ts', 'build-sass', 'build-html', 'copy-file', 'copy-server']);
+gulp.task('build', ['build-ts', 'build-sass', 'build-html', 'copy-file']);
 gulp.task('build:prod', ['build-ts-min', 'build-sass-min', 'build-html', 'copy-file']);
 
 /*  Watching */
